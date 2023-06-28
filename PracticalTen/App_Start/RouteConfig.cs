@@ -12,21 +12,16 @@ namespace PracticalTen
 		public static void RegisterRoutes(RouteCollection routes)
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-			
+
 			routes.MapRoute(
 				name: "Employee",
 				url: "{controller}/{EmpName}",
 				defaults: new { controller = "Employee", action = "Index", EmpName = UrlParameter.Optional }
 			);
 			routes.MapRoute(
-				name: "Test2",
-				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Test2", action = "Index", id = UrlParameter.Optional }
-			);
-			routes.MapRoute(
 				name: "Default",
-				url: "{controller}/{action}/{EmpName}",
-				defaults: new { controller = "Employee", action = "Index", EmpName = UrlParameter.Optional }
+				url: "{controller}/{action}/{id}",
+				defaults: new { controller = "Employee", action = "Index", id = UrlParameter.Optional }
 			);
 		}
 	}

@@ -123,6 +123,7 @@
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\Test2Controller.cs" />
+    <Compile Include="Controllers\Test3Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,6 +182,7 @@
     <Content Include="Views\Test2\Index.cshtml" />
     <Content Include="Views\Shared\_PartialViewTest.cshtml" />
     <Content Include="Views\Error\PageNotFoundError.cshtml" />
+    <Content Include="Views\Test3\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

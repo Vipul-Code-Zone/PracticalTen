@@ -2,7 +2,6 @@
 
 namespace PracticalTen.Controllers
 {
-	//[HandleError(ExceptionType =typeof(System.Exception), View = "~/Error/PageNotFoundError")]
 	public class EmployeeController : Controller
 	{
 		[HandleError]
