@@ -15,8 +15,8 @@ namespace PracticalTen
 
 			routes.MapRoute(
 				name: "Default",
-				url: "{controller}/{action}/{id}",
-				defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+				url: "{controller}/{EmpName}",
+				defaults: new { controller = "Employee", action = "Index", EmpName = UrlParameter.Optional }
 			);
 		}
 	}
