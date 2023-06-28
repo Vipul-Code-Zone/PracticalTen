@@ -2,25 +2,13 @@
 
 namespace PracticalTen.Controllers
 {
+	//[HandleError(ExceptionType =typeof(System.Exception), View = "~/Error/PageNotFoundError")]
 	public class EmployeeController : Controller
 	{
+		[HandleError]
 		public ActionResult Index(string EmpName)
 		{
 			ViewBag.EmployeeName = EmpName;
-			return View();
-		}
-
-		public ActionResult About()
-		{
-			ViewBag.Message = "Your application description page.";
-
-			return View();
-		}
-
-		public ActionResult Contact()
-		{
-			ViewBag.Message = "Your contact page.";
-
 			return View();
 		}
 	}
