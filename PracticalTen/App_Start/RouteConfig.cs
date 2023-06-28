@@ -13,10 +13,12 @@ namespace PracticalTen
 		{
 			routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+			routes.MapMvcAttributeRoutes();
+
 			routes.MapRoute(
-				name: "Employee",
-				url: "{controller}/{EmpName}",
-				defaults: new { controller = "Employee", action = "Index", EmpName = UrlParameter.Optional }
+				name: "Test2",
+				url: "{controller}/{action}/{id}",
+				defaults: new { controller = "Test2", action = "Index", id = UrlParameter.Optional }
 			);
 			routes.MapRoute(
 				name: "Default",
